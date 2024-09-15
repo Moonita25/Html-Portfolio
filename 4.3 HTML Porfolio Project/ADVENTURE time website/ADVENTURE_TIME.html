@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ADV.css">
+     <!---Normalize.css--->    
+     <link rel="stylesheet" type="text/css" href="Normalize.css">
+   
+    <title>ADVENTURE TIME</title>
+</head>
+<body>
+
+    <header>
+        <div class="headerContent">
+            <h2>Explore The World</h2>
+                <div class="line"></div><!--edn of line-->
+            <h1>A Wonderful Gift</h1>
+                <a href="" class="btn1">Learn more</a>
+            </div><!---end of hearderContent-->
+
+            <nav class="navBar" id="myHeader">
+                <div id="bck"> 
+                    <h1 class="logo" id="lg">ADVENTURE</h1>  
+                </div> 
+                <ul class="navLinks">
+                    <li><a href="#lg">Home</a></li>
+                    <li><a href="#evn">Events</a></li>
+                    <li><a href="#exp">Explore</a></li>
+                    <li><a href="#trs" class="btn2">Join tours</a></li>
+                </ul>
+                <img src="./menu-btn.png" alt="" class="menu-btn">
+            </nav>       
+    </header>
+
+    <!--EVENTS-->
+  <div class="content">   
+    <section class="events" id="evn">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+        </div><!--end of title-->
+             <div class="line"></div>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/Bikers.jpg" alt="Bikers">
+                        <h4>Bike Race to Mountain Top</h4>
+                            <p>lorem ipsum xsus dsos suhs sjso suhshm sdhiu sdiud sduhs dhs shdo dhosho is d dhisihdhshshdh dshsis</p>
+                            <a href="" class="btn1">Learn more</a>
+                    </div><!--col-->
+                    <div class="col">
+                        <img src="img/Kayaking.jpg" alt="Kayaking">
+                        <h4>Boat Regatta Contest</h4>
+                            <p>lorem ipsum xsus dsos suhs sjso suhshm sdhiu sdiud sduhs dhs shdo dhosho is d dhisihdhshshdh dshsis</p>
+                            <a href="" class="btn1">Learn more</a>
+                    </div><!--col-->
+                </div><!---end of row--><br>
+    </section><!--end of events-->
+ 
+    <section class="explore" id="exp">
+            <div class="exploreContent">
+                <h1>Explore The World</h1>
+                <div class="line"></div>
+                <p>lorem ipsum xsus dsos suhs sjso suhshm sdhiu sdiud sduhs dhs shdo dhosho is d dhisihdhshshdh dshsis.
+                    lorem ipsum xsus dsos suhs sjso suhshm sdhiu sdiud sduhs dhs shdo dhosho is d dhisihdhshshdh dshsis
+                    lorem ipsum xsus dsos suhs sjso suhshm sdhiu sdiud sduhs dhs shdo dhosho is d dhisihdhshshdh dshsis
+                </p>
+                <a href="" class="btn1">Learn more</a>
+            </div>
+    </section><!---end of explore-->
+
+    <section class="tours" id="trs">
+            <div class="row">
+                <div class="col content-col">
+                        <h1>Upcoming Tours and Destinations</h1>
+                            <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem numquam ab nihil, architecto autem et modi! Debitis voluptate beatae vitae voluptatibus quaerat facere, autem voluptas doloremque dolorum praesentium deleniti quibusdam!</p>
+                        <a href="" class="btn1">Learn more</a>
+                </div>
+                
+                <div class="col image-col">
+                    <div class="image-gallery">
+                        <img src="./img/Jump.jpg" alt="Jump">
+                        <img src="./img/vietnam.jpg" alt="Canal">
+                        <img src="./img/kids.jpg" alt="Kids on Mountain">
+                        <img src="./img/Hikers.jpg" alt="Hikers">
+                    </div>    
+                </div>
+            </div><!--- end row-->
+    </section><!---end of tours-->
+
+    <section class="footer">
+            <p>lorem ipsum xsus dsos suhs sjso suhshm sdhiu sdiud sduhs dhs shdo dhosho.</p>
+            <p>Copyright &copy; published 2024 &bullet;<author>Daniel Ita</author></p>
+    </section><!---end of footer-->
+</div><!-- end of content -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navLinks = document.querySelector('.navLinks')
+
+        menuBtn.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+        
+        
+    window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+    </script>
+</body>
+</html>

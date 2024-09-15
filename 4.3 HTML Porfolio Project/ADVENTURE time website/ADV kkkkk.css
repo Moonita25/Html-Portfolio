@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./img/ADV\ IMG2.jpg');   
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* links */
+a:link{
+    color: #fff;
+    text-decoration: none;
+}
+a:visited{
+    color: #fff;
+}
+a:hover{
+    color: #fc3;
+}
+a:active{
+    background: #7eb9b9;
+}
+
+
+a#link1:hover{
+    text-decoration: none;
+    color: #fc3;
+}
+a#link1:link{
+    font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 116.9%; /* 16.366px */
+letter-spacing: -0.28px;
+}
+a#link1:active{
+    color: #7eb9b9;
+    background: none;
+}
+a.btn:active{
+    color: white;
+}
+
+.btn{
+    background: #fc036b);
+    color: whitesmoke;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-left: 5px;
+    font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 116.9%; /* 16.366px */
+letter-spacing: -0.28px;
+}
+/* end of links */
+
+
+ul{
+    list-style-type: none;
+}
+
+/* Navigation */
+
+
+.navBar{
+    display: flex;
+    position:absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #f5f5f5;
+    justify-content: space-between;
+    width: 100%;
+}
+.navLinks{
+    display: flex;
+    align-items: center;
+}
+.navLinks li{
+    margin: 0 20px;
+}
+/* end of #Navigation */
+
+
+a{
+    text-decoration: none;
+}
+
+.headerContent{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.headerContent h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+    /* border: solid 0.05px white; */
+}
+
+.headerContent h1{
+    font-size: 7vmin;
+    margin: 50px 0 30px 0;
+}
+
+/*.btn{
+    padding: 8px 15px;
+    background: #fc036b;
+    border-radius: 30px;
+    color: #f5f5f5;
+}*/
+
